@@ -1,10 +1,20 @@
 # EasyNav Playground Drone
 
+## Pre-requisites
+
+```bash
+pip3 install kconfiglib
+```
+
 ## Installation
 
 ```bash
 cd <easynav-workspace>
-vcs import --recursive src < easynav_playground_drone/thirdparty.repos
+vcs import --recursive src < src/easynav_playground_drone/thirdparty.repos
+cd <easynav-workspace>/src
+git submodule update --recursive
+cd <easynav-workspace>
+.src/ThirdParty/robots/drone/PX4-Autopilot/Tools/setup/ubuntu.sh
 rosdep install --from-paths src --ignore-src -r -y
 colcon build --symlink-install 
 ```
