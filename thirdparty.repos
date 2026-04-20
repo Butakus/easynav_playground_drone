@@ -1,0 +1,13 @@
+repositories:
+  ThirdParty/robots/drone/PX4-Autopilot:
+    type: git
+    url: https://github.com/juanscelyg/PX4-Autopilot.git
+    version: easynav
+  ThirdParty/robots/roboligo:
+    type: git
+    url: https://github.com/juanscelyg/roboligo.git
+    version: rolling
+  ThirdParty/worlds/PX4-gazebo-models:
+    type: git
+    url: https://github.com/juanscelyg/PX4-gazebo-models.git
+    version: easynav
